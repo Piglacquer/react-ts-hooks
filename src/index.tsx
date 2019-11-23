@@ -55,6 +55,12 @@ export default function App(): JSX.Element {
 		setTodos(newTodos);
 	};
 
+	/**
+	 * @function removeTodo
+	 * @desctiption removes item from todo list
+	 * @param {number} index
+	 * @returns void
+	 */
 	const removeTodo = (index:number):void => {
 		const newTodos:iTodo[] = [...todos];
 		setTodos(newTodos.filter((todo, i) => index !== i));
