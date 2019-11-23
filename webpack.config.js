@@ -2,7 +2,7 @@ const path = require('path');
 const rules = [
 	{
 		test: /\.tsx?/,
-		excludes: /node_modules/,
+		exclude: /node_modules/,
 		loader: 'babel-loader',
 	}
 ];
